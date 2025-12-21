@@ -2,67 +2,35 @@
 
 This Power BI report provides a comprehensive view of medical claims receivables, helping healthcare finance teams monitor outstanding balances, overdue trends, and payment timelines.
 
----
+**1. The Challenge**
 
-## 📊 Key Performance Indicators (KPIs)
+**The Problem:** High month-over-month overdue balances (6+ months) were stalling cash flow. The Cause: Fragmented data across four systems (Oracle ERP, HFM, Epic CRM, and manual Excel trackers) made it impossible to identify whether delays were caused by insurance denials, patient non-payment, or manual reconciliation lags.
 
-The top section of the dashboard showcases the following KPIs:
+**2. The Solution: Unified Data Architecture**
 
-- **Balance Amount**: Total outstanding claims balance
-- **Within Due Amount**: Balance amount not yet overdue
-- **Over Due Amount**: Total amount that has passed its due date
-- **Over Due Percentage**: Share of overdue claims relative to the total balance
-- **Days Sales Outstanding (DSO)**: Average number of days it takes to collect payment after a service is billed
+I engineered a centralized dashboard that bridges the gap between clinical billing and financial posting.
 
----
+**Systems Integrated:** Oracle ERP (Finance), Oracle HFM (Accounting), Epic CRM (Claims), Excel (Collections).
 
-## 📈 Visualizations
+**3. Visual Strategy & Insights**
 
-### 1. 📉 Age Analysis of Due Balance – *Column Chart*
-- Shows the distribution of due balances across aging brackets (e.g., 0-30, 31-60, 61-90, 90+ days).
-- Highlights where the bulk of receivables are concentrated.
+**Page 1: Executive Operations (The "So What?")**
+Focuses on high-level health metrics and identifying the "Big Rocks" slowing down payments.
 
-### 2. 🧾 Claim Status – *Donut Chart*
-- Displays the proportion of claims by status: Pending, Paid, Denied, Under Review, etc.
+**Strategic KPIs:** Total Billed vs. Open AR, DSO (Days Sales Outstanding), and % Unpaid.
 
-### 3. 💰 Actual vs Estimated Cash Flow – *Cluster Column Chart*
-- Compares actual cash inflows with estimated forecasts.
-- Helps monitor prediction accuracy and spot shortfalls.
+**Trend Analysis:** A 6-month MoM sparkline comparing Claim Amount vs. Insurance Paid to highlight widening gaps.
 
-### 4. 📆 Monthly Trend – *Line and Stacked Column Chart*
-- Tracks **Within Due**, **Over Due**, and **Billed Amounts** month-over-month.
-- Offers both trend and breakdown visibility.
+**Loss Distribution:** A Donut Chart of Top 5 Denial Reasons and a Stacked Column showing Rejected Amount by Payer Group (Medicare, Commercial, etc.).
 
-### 5. 🔝 Top 10 Procedures by Over Due Amount – *Matrix*
-Displays detailed metrics per procedure:
-| Procedure Code | Balance Amount | Within Due Amount | Over Due Amount | Over Due % |
-|----------------|----------------|--------------------|------------------|-------------|
-| XYZ123         | $10,000        | $2,000             | $8,000           | 80%         |
+**Efficiency Metric:** A 80% Pareto constant line to identify the 20% of procedure codes causing 80% of the rejections.
 
----
+**Page 2: Tactical Controller (The "Action")**
+A self-service drill-through page for the Collections and Claims teams to take immediate action.
 
-## 📁 Files Included
+**Granular Filters:** Search by Diagnosis Code, Procedure Code, or Patient ID.
 
-- `MedicalClaimsARDashboard.pbix` – Power BI report file
-- `README.md` – This documentation
-- *(Optional)* Report screenshots or mockups
-
----
-
-## 💡 Usage
-
-1. Open the `.pbix` file using Power BI Desktop.
-2. Connect to your data source (or use the sample data embedded).
-3. Refresh the report to update visualizations.
-4. Publish to Power BI Service or share securely.
-
----
-
-## 🔐 Note
-
-Ensure that patient-identifiable data (PHI) is anonymized or removed before sharing or publishing this dashboard externally to comply with **HIPAA** or relevant privacy regulations.
-
----
+**The Worklist:** A detailed table featuring Conditional Formatting for aging claims, allowing staff to prioritize high-value/high-risk recoveries.
 
 ## 📬 Contact
 
