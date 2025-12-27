@@ -1,4 +1,4 @@
-# 🏥 Medical Claims Accounts Receivable Dashboard
+# Medical Claims Accounts Receivable Dashboard
 
 This Power BI report provides a comprehensive view of medical claims receivables, helping healthcare finance teams monitor outstanding balances, overdue trends, and payment timelines.
 
@@ -32,7 +32,4 @@ A self-service drill-through page for the Collections and Claims teams to take i
 
 **The Worklist:** A detailed table featuring Conditional Formatting for aging claims, allowing staff to prioritize high-value/high-risk recoveries.
 
-## 📬 Contact
-
-For questions, contributions, or enhancements, feel free to open an issue or pull request.
 
