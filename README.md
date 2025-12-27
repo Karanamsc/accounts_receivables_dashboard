@@ -4,13 +4,13 @@ This Power BI report provides a comprehensive view of medical claims receivables
 
 **1. The Challenge**
 
-**The Problem:** High month-over-month overdue balances (6+ months) were stalling cash flow. The Cause: Fragmented data across four systems (Oracle ERP, HFM, Epic CRM, and manual Excel trackers) made it impossible to identify whether delays were caused by insurance denials, patient non-payment, or manual reconciliation lags.
+**The Problem:** High month-over-month overdue balances (6+ months) were stalling cash flow. 
+
+**The Cause:** Fragmented data across four systems made it impossible to identify whether delays were caused by insurance denials, patient non-payment, or manual reconciliation lags.
 
 **2. The Solution: Unified Data Architecture**
 
 I engineered a centralized dashboard that bridges the gap between clinical billing and financial posting.
-
-**Systems Integrated:** Oracle ERP (Finance), Oracle HFM (Accounting), Epic CRM (Claims), Excel (Collections).
 
 **3. Visual Strategy & Insights**
 
